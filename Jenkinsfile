@@ -1,8 +1,5 @@
 node {
-  stage('git') {
-  git 'https://github.com/shopizer-ecommerce/shopizer.git'
-     }
-  stage('packege') {
+   stage('packege') {
    sh'mvn clean package'
   }
   stage ('copy war file s3') {
