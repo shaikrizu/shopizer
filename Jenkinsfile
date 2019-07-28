@@ -1,4 +1,7 @@
 node {
+     stage('packege') {
+   sh'cd shopizer'
+  }
    stage('packege') {
    sh'mvn clean install'
   }
